@@ -162,13 +162,13 @@ export default function HeroScene({
             key={hotspot.id}
             x={hotspot.x}
             y={hotspot.y}
-            onClick={() => setSelectedProduct(currentScene.products[index] as ProductInfo)}
+            onClick={() => setSelectedProduct(currentScene.products[index] as unknown as ProductInfo)}
           />
         )
       )}
 
       {currentScene.products.map((product) => (
-        <div key={product.id} className="cursor-pointer" onClick={() => setSelectedProduct(product as ProductInfo)}>
+        <div key={product.id} className="cursor-pointer" onClick={() => setSelectedProduct(product as unknown as ProductInfo)}>
           <ProductHighlight
               image={product.image}
               x={product.x}
