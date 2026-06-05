@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 
 export type ProductInfo = {
-  id: string;
+  id: number;
   title: string;
   size: string;
   description: string;

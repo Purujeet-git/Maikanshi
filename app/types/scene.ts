@@ -17,6 +17,10 @@ export interface HotspotData {
 
 export interface ProductData {
     id:number;
+    title: string;
+    size: string;
+    description: string;
+    bullets: string[];
     image:string;
     x:string;
     y:string;
